@@ -1,0 +1,62 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <AssemblyName>AntWeb</AssemblyName>
+    <TargetFramework>net8.0</TargetFramework>
+    <AssemblyTitle>蚂蚁调度控制台</AssemblyTitle>
+    <Description>分布式任务调度系统，纯NET打造的重量级大数据实时计算平台，万亿级调度经验积累</Description>
+    <Company>新生命开发团队</Company>
+    <Copyright>版权所有(C) 新生命开发团队 2023</Copyright>
+    <VersionPrefix>3.4</VersionPrefix>
+    <VersionSuffix>$([System.DateTime]::Now.ToString(`yyyy.MMdd`))</VersionSuffix>
+    <Version>$(VersionPrefix).$(VersionSuffix)</Version>
+    <FileVersion>$(Version)</FileVersion>
+    <AssemblyVersion>$(VersionPrefix).*</AssemblyVersion>
+    <Deterministic>false</Deterministic>
+    <OutputPath>..\Bin\Web</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <IsPackable>true</IsPackable>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Areas\Ant\Views\AppConfig\**" />
+    <Content Remove="Areas\Ant\Views\AppConfig\**" />
+    <EmbeddedResource Remove="Areas\Ant\Views\AppConfig\**" />
+    <None Remove="Areas\Ant\Views\AppConfig\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Areas\Ant\Controllers\AppConfigController.cs" />
+    <Compile Remove="Common\ApiFilterAttribute.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="Areas\Ant\Views\AppHistory\_List_Data.cshtml" />
+    <Content Remove="Areas\Ant\Views\App\_List_Data.cshtml" />
+    <Content Remove="Areas\Ant\Views\JobTask\_List_Data.cshtml" />
+    <Content Remove="Areas\Ant\Views\Job\_List_Data.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\AntJob.Server\Services\AppService.cs" Link="Services\AppService.cs" />
+    <Compile Include="..\AntJob.Server\Services\JobService.cs" Link="Services\JobService.cs" />
+    <Compile Include="..\AntJob.Server\Setting.cs" Link="Setting.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="DH.NCube.Core" Version="3.7.2024.820-beta0650" />
+    <PackageReference Include="DH.NRemoting.Extensions" Version="3.7.2024.820" />
+    <PackageReference Include="DH.NStardust.Extensions" Version="3.7.2024.820" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AntJob.Data\AntJob.Data.csproj" />
+    <ProjectReference Include="..\DH.NAntJob\DH.NAntJob.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Common\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Areas\Ant\Views\Shared\_App_Nav.cshtml" />
+  </ItemGroup>
+</Project>

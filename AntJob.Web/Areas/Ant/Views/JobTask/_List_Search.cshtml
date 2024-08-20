@@ -1,0 +1,10 @@
+﻿@using AntJob;
+@using AntJob.Data;
+@{
+    var page = ViewBag.Page as Pager;
+}
+<div class="form-group">
+    <label for="status" class="control-label">状态：</label>
+    @Html.ForDropDownList("status", EnumHelper.GetDescriptions(typeof(JobStatus)), page["status"], "全部", true)
+</div>
+@await Html.PartialAsync("_DateRange")

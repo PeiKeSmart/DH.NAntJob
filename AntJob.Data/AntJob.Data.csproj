@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.1</TargetFrameworks>
+    <AssemblyTitle>蚂蚁数据</AssemblyTitle>
+    <Description>蚂蚁调度系统数据库结构</Description>
+    <Company>新生命开发团队</Company>
+    <Copyright>版权所有(C) 新生命开发团队 2024</Copyright>
+    <VersionPrefix>3.4</VersionPrefix>
+    <VersionSuffix>$([System.DateTime]::Now.ToString(`yyyy.MMdd`))</VersionSuffix>
+    <Version>$(VersionPrefix).$(VersionSuffix)</Version>
+    <FileVersion>$(Version)</FileVersion>
+    <AssemblyVersion>$(VersionPrefix).*</AssemblyVersion>
+    <Deterministic>false</Deterministic>
+    <OutputPath>..\Bin</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineConstants>TRACE</DefineConstants>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Config\**" />
+    <Compile Remove="DLL\**" />
+    <Compile Remove="Log\**" />
+    <EmbeddedResource Remove="Config\**" />
+    <EmbeddedResource Remove="DLL\**" />
+    <EmbeddedResource Remove="Log\**" />
+    <None Remove="Config\**" />
+    <None Remove="DLL\**" />
+    <None Remove="Log\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Entity\应用配置.Biz.cs" />
+    <Compile Remove="Entity\应用配置.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Build.tt" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="DH.NCode" Version="3.7.2024.820" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DH.NAntJob\DH.NAntJob.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Build.log">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Build.tt</DependentUpon>
+    </None>
+  </ItemGroup>
+
+</Project>

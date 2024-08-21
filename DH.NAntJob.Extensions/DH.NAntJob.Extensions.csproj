@@ -20,7 +20,7 @@
 
   <PropertyGroup>
     <!--<IsPackable>true</IsPackable>-->
-    <PackageId>NewLife.$(AssemblyName)</PackageId>
+    <PackageId>$(AssemblyName)</PackageId>
     <Authors>$(Company)</Authors>
     <PackageProjectUrl>https://www.haocoding.com/</PackageProjectUrl>
     <PackageIcon>DH.png</PackageIcon>

@@ -29,7 +29,7 @@
     <Content Include="favicon.ico" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="DH.NRedis" Version="3.7.2024.820" />
+    <PackageReference Include="DH.NRedis" Version="3.7.2024.821-beta0308" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AntJob.Data\AntJob.Data.csproj" />

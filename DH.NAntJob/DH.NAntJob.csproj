@@ -44,7 +44,7 @@
 
   <ItemGroup>
     <PackageReference Include="DH.NRemoting" Version="3.7.2024.828-beta0223" />
-    <PackageReference Include="DH.NStardust" Version="3.7.2024.826-beta0214" />
+    <PackageReference Include="DH.NStardust" Version="3.7.2024.829-beta0138" />
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>

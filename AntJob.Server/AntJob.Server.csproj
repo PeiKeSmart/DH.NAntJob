@@ -5,9 +5,9 @@
     <TargetFramework>net8.0</TargetFramework>
     <AssemblyTitle>蚂蚁分布式调度</AssemblyTitle>
     <Description>分布式任务调度系统，纯NET打造的重量级大数据实时计算平台，万亿级调度经验积累</Description>
-    <Company>新生命开发团队</Company>
-    <Copyright>版权所有(C) 新生命开发团队 2023</Copyright>
-    <VersionPrefix>3.4</VersionPrefix>
+    <Company>湖北登灏科技有限公司</Company>
+    <Copyright>©2020-2024 湖北登灏科技有限公司</Copyright>
+    <VersionPrefix>3.7</VersionPrefix>
     <VersionSuffix>$([System.DateTime]::Now.ToString(`yyyy.MMdd`))</VersionSuffix>
     <Version>$(VersionPrefix).$(VersionSuffix)</Version>
     <FileVersion>$(Version)</FileVersion>
@@ -32,6 +32,6 @@
     <PackageReference Include="DH.NRedis" Version="3.8.2024.907-beta0155" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AntJob.Data\AntJob.Data.csproj" />
+    <ProjectReference Include="..\AntJob.Data\DH.NAntJob.Data.csproj" />
   </ItemGroup>
 </Project>

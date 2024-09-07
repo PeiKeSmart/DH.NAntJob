@@ -10,7 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AntJob.Data\AntJob.Data.csproj" />
+    <ProjectReference Include="..\AntJob.Data\DH.NAntJob.Data.csproj" />
     <ProjectReference Include="..\DH.NAntJob.Extensions\DH.NAntJob.Extensions.csproj" />
   </ItemGroup>
 

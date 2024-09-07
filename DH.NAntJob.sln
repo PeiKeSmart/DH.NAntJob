@@ -18,9 +18,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test", "Test\Test.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DH.NAntJob", "DH.NAntJob\DH.NAntJob.csproj", "{717A3C5A-C4E9-4E85-BB57-916ED6FAC936}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AntJob.Data", "AntJob.Data\AntJob.Data.csproj", "{01639CC1-1574-4AE1-BBC5-E0538FA5C44C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DH.NAntJob.Data", "AntJob.Data\DH.NAntJob.Data.csproj", "{01639CC1-1574-4AE1-BBC5-E0538FA5C44C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AntJob.Web", "AntJob.Web\AntJob.Web.csproj", "{A9E0597C-E818-4B33-8AC3-BE134D68B78E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DH.NAntJob.Web", "AntJob.Web\DH.NAntJob.Web.csproj", "{A9E0597C-E818-4B33-8AC3-BE134D68B78E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AntJob.Server", "AntJob.Server\AntJob.Server.csproj", "{6780F068-804B-45D4-8907-1CD7C6FA0F81}"
 EndProject

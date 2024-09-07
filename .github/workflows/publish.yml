@@ -24,6 +24,8 @@ jobs:
       run: |
         dotnet pack --version-suffix ${{ env.VERSION }} -c Release -o out DH.NAntJob/DH.NAntJob.csproj
         dotnet pack --version-suffix ${{ env.VERSION }} -c Release -o out DH.NAntJob.Extensions/DH.NAntJob.Extensions.csproj
+        dotnet pack --version-suffix ${{ env.VERSION }} -c Release -o out DH.NAntJob.Data/DH.NAntJob.Data.csproj
+        dotnet pack --version-suffix ${{ env.VERSION }} -c Release -o out DH.NAntJob.Web/DH.NAntJob.Web.csproj
     - name: Publish
       run: |
         dotnet nuget push ./out/*.nupkg --skip-duplicate --source https://nuget.pkg.github.com/NewLifeX/index.json --api-key ${{ github.token }}

@@ -3,9 +3,9 @@
     <TargetFrameworks>netstandard2.1</TargetFrameworks>
     <AssemblyTitle>蚂蚁数据</AssemblyTitle>
     <Description>蚂蚁调度系统数据库结构</Description>
-    <Company>新生命开发团队</Company>
-    <Copyright>版权所有(C) 新生命开发团队 2024</Copyright>
-    <VersionPrefix>3.4</VersionPrefix>
+    <Company>湖北登灏科技有限公司</Company>
+    <Copyright>©2020-2024 湖北登灏科技有限公司</Copyright>
+    <VersionPrefix>3.7</VersionPrefix>
     <VersionSuffix>$([System.DateTime]::Now.ToString(`yyyy.MMdd`))</VersionSuffix>
     <Version>$(VersionPrefix).$(VersionSuffix)</Version>
     <FileVersion>$(Version)</FileVersion>

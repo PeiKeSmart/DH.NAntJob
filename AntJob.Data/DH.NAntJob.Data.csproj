@@ -37,7 +37,7 @@
     <None Remove="Build.tt" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="DH.NCode" Version="3.7.2024.918-beta0722" />
+    <PackageReference Include="DH.NCode" Version="3.7.2024.920-beta0117" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DH.NAntJob\DH.NAntJob.csproj" />

@@ -43,7 +43,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="DH.NRemoting" Version="3.7.2024.918-beta0823" />
+    <PackageReference Include="DH.NRemoting" Version="3.7.2024.920-beta0123" />
     <PackageReference Include="DH.NStardust" Version="3.7.2024.918-beta0838" />
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0">
       <PrivateAssets>all</PrivateAssets>

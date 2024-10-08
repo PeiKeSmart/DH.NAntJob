@@ -31,7 +31,7 @@
     <Content Include="favicon.ico" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="DH.NStardust" Version="3.7.2024.918-beta0838" />
+    <PackageReference Include="DH.NStardust" Version="3.91.2024.1008-beta0339" />
   </ItemGroup>
 
   <ItemGroup>

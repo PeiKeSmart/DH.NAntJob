@@ -44,9 +44,9 @@
     <Content Include="favicon.ico" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="DH.NCube.Core" Version="3.7.2024.920-beta0129" />
-    <PackageReference Include="DH.NRemoting.Extensions" Version="3.7.2024.920-beta0123" />
-    <PackageReference Include="DH.NStardust.Extensions" Version="3.7.2024.918-beta0838" />
+    <PackageReference Include="DH.NCube.Core" Version="3.91.2024.923-beta0331" />
+    <PackageReference Include="DH.NRemoting.Extensions" Version="3.91.2024.1008-beta0243" />
+    <PackageReference Include="DH.NStardust.Extensions" Version="3.91.2024.1008-beta0339" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AntJob.Data\DH.NAntJob.Data.csproj" />

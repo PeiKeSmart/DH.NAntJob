@@ -234,7 +234,7 @@ public abstract class DataHandler : Handler
 
         if (!Where.IsNullOrEmpty()) exp &= Where;
 
-        var list = Factory.FindAll(exp, OrderBy, Selects, KeepFirstPage ? 0 : row, task.BatchSize);
+        var list = Factory.FindAll(exp, OrderBy, Selects, this.KeepFirstPage ? 0 : row, task.BatchSize);
 
         // 取到数据，需要滑动窗口
         if (list.Count > 0) row += list.Count;
